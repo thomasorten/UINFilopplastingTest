@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 Login
+    form(action="/login" method="POST")
+        label Brukernavn
+        input(type="text" name="username")
+        br
+        label Passord
+        input(type="password" name="password")
+        br
+        input(type="submit")
